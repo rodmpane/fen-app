@@ -1,0 +1,26 @@
+{
+  "name": "fen-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Application de gestion de la Fondation Ézéchiel NTAL (web et Android)",
+  "scripts": {
+    "prepare:web": "node scripts/prepare.mjs",
+    "start": "npm run prepare:web && npx --yes serve www -l 5173",
+    "android:add": "cap add android",
+    "android:sync": "npm run prepare:web && cap sync android",
+    "android:open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/filesystem": "^6.0.2",
+    "@capacitor/share": "^6.0.3",
+    "jspdf": "2.5.1",
+    "qrcode-generator": "1.4.4",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.2.0"
+  }
+}

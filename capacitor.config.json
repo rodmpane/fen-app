@@ -1,0 +1,8 @@
+{
+  "appId": "cd.fen.ezechielntal",
+  "appName": "Fondation FEN",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
